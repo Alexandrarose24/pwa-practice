@@ -7,6 +7,7 @@ self.addEventListener('install', function(event) {
         .then(function(cache) {
             console.log("precaching");
             cache.add('/index.html');
+            cache.add('/css/mainpage.css');
             cache.add('/');
         })
     )
