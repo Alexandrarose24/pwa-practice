@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=320, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <meta name="viewport" content="width=320, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/tomatoOne.css">
     <link rel="stylesheet" href="css/mainActiv.css">
     <title>AGRIDERA - Company profile</title>
 </head>
+
 <body>
     <header id="header" class="header">
         <div class="container">
@@ -25,7 +29,7 @@
                             <form class="" action="">
                                 <input type="text" placeholder="Search.." name="search">
                                 <button type="submit"><img src="images/search.png" alt="search"></button>
-                              </form>
+                            </form>
                         </div>
                         <br>
                         <div class="burgerMenu">
@@ -34,7 +38,7 @@
                         </div>
                         <div class="menuUp">
                             <ul class="menu d-flex justify-content-center">
-                                <li class="menu__item"> 
+                                <li class="menu__item">
                                     <a href="index.html">Home</a>
                                 </li>
                                 <li class="menu__item">
@@ -60,8 +64,8 @@
                     </nav>
                 </div>
             </div>
-            </div>
-        </header>
+        </div>
+    </header>
 
 
     <section class="tomatoOne">
@@ -91,9 +95,9 @@
                             <div class="col-lg-2">
                                 <img src="images/tomatoOne/quality.svg" alt="quality">
                             </div>
-                                <div class="col-lg-8">
-                                    <b class="quality__text">Very high yield and excellent fruits quality!</b>
-                                </div>
+                            <div class="col-lg-8">
+                                <b class="quality__text">Very high yield and excellent fruits quality!</b>
+                            </div>
                         </div>
 
                         <div class="row">
@@ -113,8 +117,10 @@
                     <div class="tomatoImage"><img :src="'images/'+product.image" alt="beet"></div>
 
                     <div class="download">
-                        <button @click.prevent="addToCart(product.id)" v-if="!btnVisible"><img src="images/shopping-cart.svg" alt="pdf"><span>Add to card</span></button>
-                        <a href="contactUs.html"><button v-if="btnVisible"><img src="images/shopping-cart.svg" alt="cart"><span>Go to card</span></button></a>
+                        <button @click.prevent="addToCart(product.id)" v-if="!btnVisible"><img
+                                src="images/shopping-cart.svg" alt="pdf"><span>Add to card</span></button>
+                        <a href="contactUs.html"><button v-if="btnVisible"><img src="images/shopping-cart.svg"
+                                    alt="cart"><span>Go to card</span></button></a>
                     </div>
 
                     <div class="textBlock_item">
@@ -141,51 +147,51 @@
     <section id="footerFirst" class="footerFirst">
         <div class="container">
             <div class="row">
-                    <div class="col-lg-8 col-md-12">
-                        <ul class="footer__menu">
-                            <li class="footer__item"> 
-                                <a href="#">PROFILE</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#">MANAGEMENT</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#">PRODUCTS</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#">R&D</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#">LINKS</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#">SITEMAP</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#">CONTACT</a>
-                            </li>
-                        </ul> 
-                    </div>
-                    <div class="col-lg-3 d-flex justify-content-center ml-auto">
-                        <li class="footer__link">
-                            <a href="#"><img src="images/linkedin.svg" alt="linkedin"></a>
+                <div class="col-lg-8 col-md-12">
+                    <ul class="footer__menu">
+                        <li class="footer__item">
+                            <a href="#">PROFILE</a>
                         </li>
-                        <li class="footer__link">
-                            <a href="#"><img src="images/inst.svg" alt="instagram"></a>
+                        <li class="footer__item">
+                            <a href="#">MANAGEMENT</a>
                         </li>
-                        <li class="footer__link">
-                            <a href="#"><img src="images/youtube.svg" alt="youtube"></a>
+                        <li class="footer__item">
+                            <a href="#">PRODUCTS</a>
                         </li>
-                        <li class="footer__link">
-                            <a href="#"><img src="images/Ico_tw.svg" alt="twitter"></a>
+                        <li class="footer__item">
+                            <a href="#">R&D</a>
                         </li>
-                        <li class="footer__link">
-                            <a href="#"><img src="images/Ico_fb.svg" alt="facebook"></a>
+                        <li class="footer__item">
+                            <a href="#">LINKS</a>
                         </li>
-                    </div>
+                        <li class="footer__item">
+                            <a href="#">SITEMAP</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-center ml-auto">
+                    <li class="footer__link">
+                        <a href="#"><img src="images/linkedin.svg" alt="linkedin"></a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#"><img src="images/inst.svg" alt="instagram"></a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#"><img src="images/youtube.svg" alt="youtube"></a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#"><img src="images/Ico_tw.svg" alt="twitter"></a>
+                    </li>
+                    <li class="footer__link">
+                        <a href="#"><img src="images/Ico_fb.svg" alt="facebook"></a>
+                    </li>
+                </div>
             </div>
         </div>
-</section>
+    </section>
 
     <footer>
         <div class="container">
@@ -201,4 +207,5 @@
 <script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/menu.js"></script>
+
 </html>
