@@ -18,10 +18,6 @@ ul{
     list-style-position: inside;
 }
 
-li:before {
-    content: "• ";
-  }
-
 .header {
     background-color: #fff;
 }
